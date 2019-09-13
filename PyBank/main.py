@@ -1,6 +1,6 @@
 import csv
 import os
-file=os.path.join("budget_data.csv")
+
 #variables that will be used to gather the statistics
 months=0
 PL=0
@@ -8,6 +8,7 @@ increases=0
 greaterIncrease=0
 greaterDecrease=0
 
+file=os.path.join("budget_data.csv")
 with open(file,"r") as budget_data:
     budgetReader=csv.reader(budget_data,delimiter=",")
     # Remove header line
